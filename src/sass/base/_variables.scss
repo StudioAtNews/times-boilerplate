@@ -1,0 +1,14 @@
+/* Breakpoints */
+$breakpoints: (phone: 520px,
+               tablet: 768px,
+               desktop: 1024px,
+               wide: 1180px) !default;
+
+
+$grid-gutter-width: 3rem;
+
+/* Palette */
+$colour-white: #FFF;
+$colour-header-footer-highlight: #D0CECE;
+$colour-header-background: #01000D;
+$colour-footer-background: #1A1F24;

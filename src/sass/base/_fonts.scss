@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"GillSansMTStd-Book";
+    src:url(../fonts/GillSans/GillSansMTStd-Book.woff2) format("woff2"), url(../fonts/GillSans/GillSansMTStd-Book.woff) format("woff"), url(../fonts/GillSans/GillSansMTStd-Book.ttf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"GillSansMTStd-Medium";
+    src:url(../fonts/GillSans/GillSansMTStd-Medium.woff2) format("woff2"), url(../fonts/GillSans/GillSansMTStd-Medium.woff) format("woff"), url(../fonts/GillSans/GillSansMTStd-Medium.ttf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"times_etext_betaregular";
+    src:url(../fonts/etext/TimeseTextBeta-Regular.woff2) format("woff2"), url(../fonts/etext/TimeseTextBeta-Regular.woff) format("woff"), url(../fonts/etext/TimeseTextBeta-Regular.ttf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"times_etext_betasc_regular";
+    src:url(../fonts/etext/TimeseTextBeta-SCRegular.woff2) format("woff2)","url(../fonts/etext/TimeseTextBeta-SCRegular.woff") format("woff)","url(../fonts/etext/TimeseTextBeta-SCRegular.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"times_etext_betabold";
+    src:url(../fonts/etext/TimeseTextBeta-Bold.woff2) format("woff2)","url(../fonts/etext/TimeseTextBeta-Bold.woff") format("woff)","url(../fonts/etext/TimeseTextBeta-Bold.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"times_etext_betabold_italic";
+    src:url(../fonts/etext/TimeseTextBeta-BoldItalic.woff2) format("woff2)","url(../fonts/etext/TimeseTextBeta-BoldItalic.woff") format("woff)","url(../fonts/etext/TimeseTextBeta-BoldItalic.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"times_etext_betaitalic";
+    src:url(../fonts/etext/TimeseTextBeta-Italic.woff2) format("woff2)","url(../fonts/etext/TimeseTextBeta-Italic.woff") format("woff)","url(../fonts/etext/TimeseTextBeta-Italic.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"times_etext_betasc_bold";
+    src:url(../fonts/etext/TimeseTextBeta-SCBold.woff2) format("woff2)","url(../fonts/etext/TimeseTextBeta-SCBold.woff") format("woff)","url(../fonts/etext/TimeseTextBeta-SCBold.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: TimesModern-Regular;
+    src: url(/d/819/fonts/TimesModern/TimesModern-Regular.woff2) format("woff2"), url(/d/819/fonts/TimesModern/TimesModern-Regular.woff) format("woff"), url(/d/819/fonts/TimesModern/TimesModern-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TimesModern-Bold;
+    src: url(/d/819/fonts/TimesModern/TimesModern-Bold.woff2) format("woff2"), url(/d/819/fonts/TimesModern/TimesModern-Bold.woff) format("woff"), url(/d/819/fonts/TimesModern/TimesModern-Bold.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TimesModern-ExtraBold-Italic;
+    src: url(/d/819/fonts/TimesModern/TimesModern-ExtraBold-Italic.woff2) format("woff2"), url(/d/819/fonts/TimesModern/TimesModern-ExtraBold-Italic.woff) format("woff"), url(/d/819/fonts/TimesModern/TimesModern-ExtraBold-Italic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+  font-family: iconfont;
+  src: url(../fonts/iconfont/iconfont.eot);
+  src: url("../fonts/iconfont/iconfont-iefix.eot") format("eot"), url("../fonts/iconfont/iconfont.woff") format("woff"), url("../fonts/iconfont/iconfont.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+}

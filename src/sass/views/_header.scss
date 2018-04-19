@@ -1,0 +1,254 @@
+/**
+ * GlobalNav - top bar
+ */
+.GlobalNav {
+
+  height: 5rem;
+  line-height: 5rem;
+
+  @include media('>=tablet') {
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+
+  a {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: transparent
+  }
+
+  .GlobalNav-wrapper {
+    height: 100%;
+    background: $colour-header-background;
+    transition: background-color .3s ease-out;
+    @include clearfix;
+  }
+
+  .GlobalNav-container {
+    @include container();
+  }
+
+  .GlobalNav-logoHolder {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem;
+    line-height: 1rem;
+
+    @include media('>=tablet') {
+      margin-left: 2rem;
+    }
+  }
+
+  .GlobalNav-logoImg {
+    height: 3rem;
+    vertical-align: middle;
+    width: auto;
+    margin-top: -.4rem;
+  }
+
+  .GlobalNav-viewEditionHolder {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    margin-right: 1rem;
+    line-height: 1rem;
+
+    @include media('>=tablet') {
+      margin-right: 2rem;
+    }
+
+    a {
+      color: $colour-header-footer-highlight;
+      font-family: GillSansMTStd-Medium;
+      font-size: 1.2rem;
+      font-smoothing: auto;
+      -webkit-font-smoothing: auto;
+      -moz-font-smoothing: auto;
+    }
+
+    a:before {
+      content: " ";
+      display: inline-block;
+      height: 1.4rem;
+      width: 1.4rem;
+      margin-top: -0.4rem;
+      margin-right: 1rem;
+      vertical-align: middle;
+      background: url(../img/link-arrow.svg) no-repeat;
+    }
+
+    .GlobalNav-viewEdition {
+      height: 3rem;
+      line-height: 3rem;
+      vertical-align: middle;
+      margin-top: 0.5rem;
+    }
+  }
+
+}
+
+/* IE fix */
+.is-ie10 .GlobalNav-logoImg, .is-ie11 .GlobalNav-logoImg {
+    height: auto !important;
+    width: 140px !important
+}
+
+/**
+ * Orientation Bar - secondary top bar
+ */
+.OrientationBar {
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 5rem;
+    right: 0;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    will-change: transform
+}
+
+/*
+@media (min-width:768px) and (max-width:1023px) {
+    .OrientationBar {
+        width: auto;
+        right: 16rem
+    }
+}
+*/
+.OrientationBar {
+    top: 5rem;
+    left: 0;
+    z-index: 4
+}
+
+@include media('>=tablet') {
+    .OrientationBar {
+        height: 4rem;
+        top: 4rem;
+    }
+}
+
+.OrientationBar.is-active {
+    display: block;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-animation: showOrientation .2s ease-out forwards;
+    animation: showOrientation .2s ease-out forwards;
+}
+
+.OrientationBar.is-hidden {
+    display: block;
+    -webkit-animation: hideOrientation .2s ease-out forwards;
+    animation: hideOrientation .2s ease-out forwards
+}
+
+.OrientationBar a {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+.OrientationBar-wrapper {
+    background: #01000D;
+    height: 100%;
+    transition: background-color .3s ease-out
+}
+
+// @media (min-width:1024px) {
+    .OrientationBar-wrapper {
+        border-top: 1px solid rgba(255, 255, 255, .3)
+    }
+// }
+
+.OrientationBar-container {
+  @include container();
+}
+
+/*
+@media (min-width:1024px) {
+    .OrientationBar-container {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .OrientationBar-container:after {
+        content: " ";
+        display: block;
+        clear: both
+    }
+}
+
+@include media('>=desktop') {
+    .OrientationBar-container {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .OrientationBar-container:after {
+        content: " ";
+        display: block;
+        clear: both
+    }
+}
+*/
+
+.OrientationBar-link {
+    font-family: TimesModern-Bold;
+    color: #FFF;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    line-height: 5rem
+}
+
+@include media('>=tablet') {
+    .OrientationBar-link {
+        font-size: 2.3rem;
+        line-height: 4rem;
+        padding: 0 2rem
+    }
+}
+
+.OrientationBar-link:hover {
+    cursor: pointer
+}
+
+@-webkit-keyframes showOrientation {
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes showOrientation {
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes hideOrientation {
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+}
+
+@keyframes hideOrientation {
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+}

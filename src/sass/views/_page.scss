@@ -1,0 +1,20 @@
+.Page {
+    position: relative;
+    padding-top: 5rem;
+
+    @media (min-width: 768px) {
+        padding-top: 4rem;
+    }
+
+    .Page-container {
+        @include container();
+
+        .Page-content {
+            margin: 0 1rem;
+
+            @media (min-width: 768px) {
+                margin: 0 2rem;
+            }
+        }
+    }
+}

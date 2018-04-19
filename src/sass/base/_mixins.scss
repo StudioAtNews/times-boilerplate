@@ -1,0 +1,34 @@
+/**
+ * Mixins
+ */
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Centered container element
+@mixin container() {
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix();
+
+  @include media("<tablet") {
+    max-width: map-get($breakpoints, phone);
+  }
+  @include media(">=tablet", "<desktop") {
+    max-width: map-get($breakpoints, tablet);
+  }
+  @include media(">=desktop","<wide") {
+    max-width: map-get($breakpoints, desktop);
+  }
+  @include media(">=wide") {
+    max-width: map-get($breakpoints, wide);
+  }
+}
